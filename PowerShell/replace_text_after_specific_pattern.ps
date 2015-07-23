@@ -1,0 +1,10 @@
+$fileName = "......robots.txt"
+(Get-Content $fileName) | 
+    Foreach-Object {
+        $_ # send the current line to output
+        if ($_ -match "PATTERNTOMATCH") 
+        {
+            #Add Lines after the selected pattern 
+            "dklfjskljdfskljflskj"
+        }
+    } | Set-Content $fileName
