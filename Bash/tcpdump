@@ -1,0 +1,2 @@
+#1. To monitor HTTP traffic including request and response headers and message body:
+sudo tcpdump -i any -A -s 0 'tcp port 80 and (((ip[2:2] - ((ip[0]&0xf)<<2)) - ((tcp[12]&0xf0)>>2)) != 0)'
