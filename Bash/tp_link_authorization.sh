@@ -11,7 +11,7 @@ IP="$1";
 USERNAME="$2";
 PASSWORD="$3";
  
-MAX_TRIES=1; # maximum number of reboot attempts
+MAX_TRIES=3; # maximum number of  attempts
 SYSLOG_TAG="get_external-IP"
  
 # From https://stackoverflow.com/questions/296536/urlencode-from-a-bash-script/10660730#10660730
